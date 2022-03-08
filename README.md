@@ -52,6 +52,7 @@ Ubicar el archivo application.properties y establecer en los siguientes campos d
 <br>
 El método determnina si el ADN ingresado pertenece a un mutante o a un humano. <br />
 <ul>
+<li>Para poder extraer las coincidencias y determinar si la persona es mutante, deber contener al menos una de las siguientes cadenas  “AAAA" o "TTTT" o "GGGG" o "CCCC"</li>
 <li>Si pertenece a un mutante devuelve un Status 200 OK</li>
 <li>Si corresponde a un humano devuelve un Status 403 Forbidden </li>
 <li>Si se ingresa una cadena que no puede ser procesada devuelve un Status 400 Bad Request:<br />
